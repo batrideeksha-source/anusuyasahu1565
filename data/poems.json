@@ -1,0 +1,13 @@
+[
+  {
+    "id": "poem-1",
+    "slug": "sample-poem",
+    "title": "नमूना कविता",
+    "text": "यह केवल नमूना सामग्री है।\nवास्तविक कविता Admin Dashboard से जोड़ें।",
+    "translation": "",
+    "image": "",
+    "published": false,
+    "createdAt": "2026-07-25T00:00:00Z",
+    "updatedAt": "2026-07-25T00:00:00Z"
+  }
+]

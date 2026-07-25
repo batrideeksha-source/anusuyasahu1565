@@ -1,0 +1,1 @@
+/* Poems rendering is kept inline on its page to minimize requests. */
