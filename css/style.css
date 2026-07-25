@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap');
 :root{--primary:#7a263a;--accent:#c9892b;--bg:#fffaf0;--text:#35261f;--card:#fff;--muted:#78685f}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Noto Serif Devanagari",sans-serif;line-height:1.7}
