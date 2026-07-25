@@ -1,0 +1,48 @@
+{
+  "events": [
+    {
+      "id": "event-001",
+      "section": "upcoming",
+      "status": "active",
+      "title": "Independence Day Cultural Program",
+      "date": "2026-08-15",
+      "description": "Special event card for poetry, performance, or community celebration.",
+      "imageUrl": "",
+      "linkUrl": "",
+      "updatedAt": "2026-07-25T00:00:00Z"
+    },
+    {
+      "id": "event-002",
+      "section": "upcoming",
+      "status": "active",
+      "title": "Live Interview Session",
+      "date": "2026-09-01",
+      "description": "Use this for live sessions, guest interviews, or online literary events.",
+      "imageUrl": "",
+      "linkUrl": "",
+      "updatedAt": "2026-07-25T00:00:00Z"
+    },
+    {
+      "id": "gallery-001",
+      "section": "gallery",
+      "status": "active",
+      "title": "Poetry evening",
+      "date": "2026-06-10",
+      "description": "Add a photo from a previous poetry or cultural event.",
+      "imageUrl": "",
+      "linkUrl": "",
+      "updatedAt": "2026-07-25T00:00:00Z"
+    },
+    {
+      "id": "gallery-002",
+      "section": "gallery",
+      "status": "active",
+      "title": "Interview session",
+      "date": "2026-05-22",
+      "description": "Add a photo from a guest conversation or recording setup.",
+      "imageUrl": "",
+      "linkUrl": "",
+      "updatedAt": "2026-07-25T00:00:00Z"
+    }
+  ]
+}
