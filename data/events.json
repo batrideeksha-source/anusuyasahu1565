@@ -1,15 +1,15 @@
 [
   {
     "id": "event-1",
-    "title": "साहित्यिक कार्यक्रम test1",
+    "title": "साहित्यिक कार्यक्रम",
     "date": "2026-08-15",
     "time": "18:00",
     "venue": "स्थान अपडेट करें",
-    "description": "कार्यक्रम का विवरण Admin Dashboard से अपडेट करें।",
-    "registerLink": "",
+    "description": "हिंदी भवन, भोपाल",
+    "registerLink": "https://docs.google.com/forms/d/e/1FAIpQLScauhRCjZFe0tKIuOlVP95FYXstfXissmORbMfjo3X8vqXMxg/viewform?usp=publish-editor",
     "image": "",
     "published": true,
     "createdAt": "2026-07-25T00:00:00Z",
-    "updatedAt": "2026-07-25T09:43:10.770Z"
+    "updatedAt": "2026-07-25T11:08:01.915Z"
   }
 ]
