@@ -9,22 +9,24 @@
   "mission": "हिंदी साहित्य, संस्कृति और मानवीय मूल्यों को रचनात्मक अभिव्यक्ति देना।",
   "vision": "नई पीढ़ी को साहित्य और संस्कृति से जोड़ना।",
   "institution": {
-    "name": "विश्व साहित्य संस्थान",
-    "description": "संस्थान की सत्यापित जानकारी Admin Dashboard से जोड़ें।"
+    "name": "विश्व साहित्य सेवा संस्थान",
+    "description": "साहित्य, संस्कृति और रचनात्मक संवाद को समर्पित साहित्यिक संस्था।",
+    "logo": "images/logo/vsss-logo.png"
   },
   "email": "",
   "phone": "",
   "youtube": "https://www.youtube.com/@anusuyasahu1565",
+  "facebook": "https://www.facebook.com/share/1CBU68pDm9/?mibextid=wwXIfr",
   "social": {
-    "facebook": "",
+    "facebook": "https://www.facebook.com/share/1CBU68pDm9/?mibextid=wwXIfr",
     "instagram": ""
   },
-  "logo": "",
-  "heroImage": "images/hero/hero.jpeg",
+  "logo": "images/logo/vsss-logo.png",
+  "heroImage": "images/profile/anusuya-sahu.jpg",
   "theme": {
-    "primary": "#7a263a",
-    "accent": "#c9892b",
-    "background": "#fffaf0",
-    "text": "#35261f"
+    "primary": "#751f36",
+    "accent": "#d79a3b",
+    "background": "#f8f2e8",
+    "text": "#271d19"
   }
 }
