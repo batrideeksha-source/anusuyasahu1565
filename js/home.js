@@ -4,16 +4,12 @@ document.getElementById('year').textContent=new Date().getFullYear();
  const [s,p,e,v,people]=await Promise.all([safe('settings',{}),safe('poems',[]),safe('events',[]),safe('videos',[]),safe('people',[])]);
  const byId=id=>document.getElementById(id);
  if(byId('heroName'))byId('heroName').textContent=s.siteName||'अनुसुया साहू';
- if(byId('tagline'))byId('tagline').textContent=s.tagline||'';
- if(byId('heroText'))byId('heroText').textContent=s.heroText||'';
  if(byId('aboutText'))byId('aboutText').textContent=s.about||'';
  if(byId('mainQuote'))byId('mainQuote').textContent=s.quote||'';
- if(byId('institutionName'))byId('institutionName').textContent=s.institution?.name||'विश्व साहित्य सेवा संस्थान';
- if(byId('institutionText'))byId('institutionText').textContent=s.institution?.description||'';
+ if(byId('institutionText'))byId('institutionText').textContent=s.institution?.description||'साहित्य, संस्कृति और रचनात्मक संवाद को समर्पित साहित्यिक संस्था।';
  [byId('yt'),byId('channelBtn'),byId('footerYoutube')].filter(Boolean).forEach(a=>a.href=s.youtube||'#');
- if(byId('heroImage')&&s.heroImage){const im=document.createElement('img');im.src=s.heroImage;im.alt=s.siteName||'अनुसुया साहू';im.fetchPriority='high';im.decoding='async';im.onerror=()=>console.error('Hero portrait failed:',im.src);byId('heroImage').replaceChildren(im)}
- const mark=document.querySelector('.institution-mark'),logo=s.institution?.logo||s.logo;
- if(mark&&logo){const im=document.createElement('img');im.src=logo;im.alt=`${s.institution?.name||'VSSS'} logo`;im.loading='lazy';im.onload=()=>mark.classList.add('has-logo');im.onerror=()=>{mark.classList.remove('has-logo');mark.textContent='VSSS'};mark.replaceChildren(im)}
+ const logo=s.institution?.logo||s.logo;
+ document.querySelectorAll('.institution-mark').forEach(mark=>{if(!logo)return;const im=document.createElement('img');im.src=logo;im.alt=`${s.institution?.name||'विश्व साहित्य सेवा संस्थान'} logo`;im.loading=mark.classList.contains('hero-institution-mark')?'eager':'lazy';im.onload=()=>mark.classList.add('has-logo');im.onerror=()=>{mark.classList.remove('has-logo');mark.textContent='VSSS'};mark.replaceChildren(im)});
  const poems=Array.isArray(p)?p.filter(x=>x.published):[],events=Array.isArray(e)?e.filter(x=>x.published):[],videos=Array.isArray(v)?v.filter(x=>x.published):[],persons=Array.isArray(people)?people.filter(x=>x.published):[];
  if(byId('poemCount'))byId('poemCount').textContent=poems.length;if(byId('eventCount'))byId('eventCount').textContent=events.length;if(byId('videoCount'))byId('videoCount').textContent=videos.length;
  if(byId('poemGrid'))byId('poemGrid').innerHTML=poems.slice(0,3).map((x,i)=>`<article class="poem-feature"><span class="poem-index">0${i+1}</span><div><div class="meta">कविता</div><h3>${esc(x.title||'अनाम कविता')}</h3><div class="poem-excerpt">${esc(x.text)}</div><a class="text-link light-link" href="poems.html">पूरी कविता ↗</a></div></article>`).join('')||'<div class="empty dark-empty">नई कविताएँ शीघ्र प्रकाशित होंगी।</div>';
