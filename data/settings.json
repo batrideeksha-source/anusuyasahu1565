@@ -11,7 +11,7 @@
   "institution": {
     "name": "विश्व साहित्य सेवा संस्थान",
     "description": "साहित्य, संस्कृति और रचनात्मक संवाद को समर्पित साहित्यिक संस्था।",
-    "logo": "images/logo/vsss-logo.png"
+    "logo": "images/logo/vsss-logo.jpg"
   },
   "email": "",
   "phone": "",
@@ -21,8 +21,8 @@
     "facebook": "https://www.facebook.com/share/1CBU68pDm9/?mibextid=wwXIfr",
     "instagram": ""
   },
-  "logo": "images/logo/vsss-logo.png",
-  "heroImage": "images/profile/anusuya-sahu.jpg",
+  "logo": "images/logo/vsss-logo.jpg",
+  "heroImage": "images/profile/anusuya-sahu.png",
   "theme": {
     "primary": "#751f36",
     "accent": "#d79a3b",
