@@ -1,4 +1,6 @@
 /* Homepage-specific responsive polish */
+.institution-mark.has-logo{background:#fff;border-color:rgba(255,255,255,.65);padding:8px;overflow:hidden;box-shadow:0 14px 38px rgba(0,0,0,.18)}
+.institution-mark.has-logo img{display:block;width:100%;height:100%;object-fit:contain;border-radius:50%}
 @media(max-width:700px){
   .hero-v2-grid{display:flex;flex-direction:column;padding:26px 0 42px;gap:24px;min-height:auto}
   .hero-v2-visual{order:0;width:100%}
@@ -10,6 +12,7 @@
   .hero-quote{font-size:1rem;line-height:1.7;margin:14px 0}
   .hero-badge{width:82px;height:82px;border-width:5px;font-size:.8rem;left:12px;bottom:12px}
   .hero-mini-stats{margin-top:28px;padding-top:15px}
+  .institution-mark.has-logo{width:150px;height:150px}
 }
 @media(max-width:430px){
   .portrait-frame{height:330px;border-radius:150px 150px 16px 16px}
