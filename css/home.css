@@ -1,22 +1,20 @@
-/* Homepage-specific responsive polish */
-.institution-mark.has-logo{background:#fff;border-color:rgba(255,255,255,.65);padding:8px;overflow:hidden;box-shadow:0 14px 38px rgba(0,0,0,.18)}
+/* VSSS-focused homepage */
+.vsss-hero{position:relative;overflow:hidden;background:radial-gradient(circle at 85% 35%,rgba(215,154,59,.2),transparent 27%),linear-gradient(120deg,#f8f0e4 0,#fffaf2 55%,#ead8c2 100%)}
+.vsss-hero:before{content:'साहित्य';position:absolute;right:-.05em;bottom:-.32em;font:700 clamp(8rem,22vw,20rem) 'Noto Serif Devanagari';color:rgba(117,31,54,.035);pointer-events:none}
+.vsss-hero-grid{min-height:680px;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(330px,.65fr);gap:70px;align-items:center;padding:72px 0}
+.vsss-hero-copy h1{font-size:clamp(4rem,6.7vw,6.7rem);line-height:1.02;letter-spacing:-.045em;color:var(--primary);margin:15px 0 20px}
+.vsss-hero-copy h1 em{display:inline;font-weight:400;color:var(--accent)}
+.vsss-hero-copy>p{max-width:680px;font:400 1.18rem/1.95 'Noto Serif Devanagari';color:#594740}
+.vsss-hero-emblem{text-align:center;position:relative}
+.hero-logo-shell{width:min(100%,390px);aspect-ratio:1;margin:auto;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.55);border:1px solid rgba(117,31,54,.12);box-shadow:0 35px 80px rgba(69,37,23,.13);position:relative}
+.hero-logo-shell:before,.hero-logo-shell:after{content:'';position:absolute;border-radius:50%;border:1px solid rgba(117,31,54,.11)}
+.hero-logo-shell:before{inset:18px}.hero-logo-shell:after{inset:-18px}
+.hero-institution-mark{width:76%;height:76%;border-radius:50%;display:grid;place-items:center;font:700 2.4rem Georgia;color:var(--primary);border:0;background:transparent;position:relative;z-index:2}
+.institution-mark.has-logo{background:#fff;border-color:rgba(255,255,255,.65);padding:8px;overflow:hidden;box-shadow:0 14px 38px rgba(0,0,0,.12)}
 .institution-mark.has-logo img{display:block;width:100%;height:100%;object-fit:contain;border-radius:50%}
-@media(max-width:700px){
-  .hero-v2-grid{display:flex;flex-direction:column;padding:26px 0 42px;gap:24px;min-height:auto}
-  .hero-v2-visual{order:0;width:100%}
-  .portrait-frame{height:390px;aspect-ratio:auto;max-width:none;width:100%;border-radius:180px 180px 18px 18px}
-  .portrait-frame img{object-position:center 22%}
-  .hero-v2-grid>div:first-child{order:1}
-  .hero-v2 h1{font-size:clamp(3rem,15vw,4.25rem);margin:.08em 0;line-height:1}
-  .hero-v2 h2{margin:8px 0 12px}
-  .hero-quote{font-size:1rem;line-height:1.7;margin:14px 0}
-  .hero-badge{width:82px;height:82px;border-width:5px;font-size:.8rem;left:12px;bottom:12px}
-  .hero-mini-stats{margin-top:28px;padding-top:15px}
-  .institution-mark.has-logo{width:150px;height:150px}
-}
-@media(max-width:430px){
-  .portrait-frame{height:330px;border-radius:150px 150px 16px 16px}
-  .hero-v2 h1{font-size:3rem}
-  .hero-v2 .actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-  .hero-v2 .actions .btn{min-width:0;padding:11px 10px}
-}
+.vsss-hero-emblem>span{display:block;margin-top:34px;font:700 1.25rem 'Noto Serif Devanagari';color:var(--primary)}
+.vsss-hero-emblem>p{margin:2px 0;color:var(--muted);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase}
+.purpose-home{background:#fffaf3}.purpose-intro{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.8fr);gap:80px;align-items:end;margin-bottom:50px}.purpose-intro h2{font-size:clamp(2.8rem,5vw,4.7rem);line-height:1.15;color:var(--primary);margin:8px 0}.purpose-intro h2 em{font-weight:400;color:var(--accent)}.purpose-intro>p{font:400 1.05rem/1.95 'Noto Serif Devanagari';color:var(--muted);padding-bottom:10px}.work-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--line);border-left:1px solid var(--line)}.work-grid article{position:relative;min-height:350px;padding:28px 25px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);background:#fff;transition:.25s}.work-grid article:hover{background:#f8eee1;transform:translateY(-5px);box-shadow:0 22px 45px rgba(58,35,24,.08);z-index:2}.work-grid article>span{position:absolute;right:18px;top:16px;color:#bbaea3;font-size:.65rem}.work-icon{width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:var(--primary);color:#fff;font:700 1rem 'Noto Serif Devanagari';margin:30px 0 25px}.work-grid h3{font-size:1.45rem;color:var(--primary);margin:0 0 12px}.work-grid p{font:400 .93rem/1.8 'Noto Serif Devanagari';color:var(--muted)}.work-grid a{position:absolute;left:25px;bottom:25px;text-decoration:none;font-size:.78rem;font-weight:700}.institution-story{background:var(--primary);color:#f6ece4;padding:80px 0}.institution-story-grid{display:grid;grid-template-columns:170px minmax(0,1fr) minmax(250px,.55fr);gap:55px;align-items:center}.story-institution-mark{width:160px;height:160px;border-radius:50%;border:1px solid rgba(255,255,255,.35);display:grid;place-items:center;color:#fff;font:700 1.8rem Georgia}.institution-story h2{font-size:clamp(2.4rem,4vw,3.7rem);line-height:1.2;margin:9px 0}.institution-story h2 em{font-weight:400;color:#efc77e}.institution-story p{font:400 1rem/1.9 'Noto Serif Devanagari';color:#e0cbc2}.institution-story blockquote{margin:0;padding-left:30px;border-left:1px solid rgba(255,255,255,.25);font:400 1.35rem/1.8 'Noto Serif Devanagari';color:#efcf98}.founder-strip{background:#efe2d2}.founder-strip-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,.65fr);gap:80px;align-items:center}.founder-strip h2{font-size:clamp(2.7rem,5vw,4.5rem);color:var(--primary);margin:7px 0}.founder-strip p{font:400 1rem/1.9 'Noto Serif Devanagari';max-width:720px}.founder-strip blockquote{margin:0;border-left:2px solid var(--accent);padding:22px 0 22px 30px;font:500 1.3rem/1.8 'Noto Serif Devanagari';color:var(--primary)}.home-cta{text-align:center;background:#241815;color:#fff;padding:90px 0}.home-cta h2{font-size:clamp(3rem,6vw,5.5rem);line-height:1.1;margin:10px 0}.home-cta p{color:#cdbdb5;font:400 1.05rem 'Noto Serif Devanagari'}.home-cta .actions{justify-content:center}.home-cta .btn.light{border-color:#ead0a6;color:#fff}.home-cta .btn.light:hover{background:#fff;color:var(--primary)}
+@media(max-width:1000px){.vsss-hero-grid{grid-template-columns:minmax(0,1fr) 310px;gap:35px;min-height:610px}.vsss-hero-copy h1{font-size:4.3rem}.work-grid{grid-template-columns:repeat(2,1fr)}.institution-story-grid{grid-template-columns:140px minmax(0,1fr)}.institution-story blockquote{grid-column:2}.story-institution-mark{width:130px;height:130px}.purpose-intro{gap:40px}}
+@media(max-width:700px){.vsss-hero-grid{display:flex;flex-direction:column;padding:42px 0 48px;gap:38px;min-height:auto}.vsss-hero-copy{text-align:center}.vsss-hero-copy h1{font-size:clamp(3rem,14vw,4.15rem);letter-spacing:-.035em}.vsss-hero-copy>p{font-size:1rem;line-height:1.8}.vsss-hero-copy .actions{justify-content:center}.vsss-hero-copy .hero-mini-stats{text-align:left}.vsss-hero-emblem{order:-1;width:100%}.hero-logo-shell{width:min(72vw,280px)}.vsss-hero-emblem>span{margin-top:25px}.purpose-intro{grid-template-columns:1fr;gap:15px}.purpose-intro h2{font-size:clamp(2.5rem,11vw,3.3rem)}.work-grid{grid-template-columns:1fr}.work-grid article{min-height:290px}.institution-story{padding:60px 0}.institution-story-grid{grid-template-columns:1fr;text-align:center;gap:28px}.story-institution-mark{margin:auto}.institution-story blockquote{grid-column:auto;border-left:0;border-top:1px solid rgba(255,255,255,.2);padding:25px 0 0}.institution-story .institution-tags{justify-content:center}.founder-strip-grid{grid-template-columns:1fr;gap:35px}.founder-strip blockquote{padding:18px 0 18px 20px}.home-cta{padding:65px 0}.home-cta h2{font-size:clamp(2.8rem,13vw,4rem)}}
+@media(max-width:430px){.vsss-hero-copy h1{font-size:3.05rem}.vsss-hero-copy .actions{display:grid;grid-template-columns:1fr 1fr}.vsss-hero-copy .actions .btn{min-width:0;padding:11px 8px}.hero-logo-shell{width:235px}.work-grid article{min-height:300px}.home-cta .actions{display:grid;grid-template-columns:1fr}.home-cta .btn{width:100%}}
